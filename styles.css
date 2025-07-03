@@ -243,7 +243,7 @@ body, html {
       font-size: 32px;
       position: absolute !important;
       right: 100px;
-      bottom: 800px;
+      bottom: 630px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
@@ -262,11 +262,11 @@ body, html {
       font-family: 'Kosugi Maru';
       font-size: 36px;
       right:120px;
-      bottom: 680px;
+      bottom: 500px;
      }
     
     .sub7{
-      position: static !important;
+      position: absolute !important;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       font-size:32px;
       font-family: 'Kosugi';
@@ -274,7 +274,7 @@ body, html {
       flex-direction: column;
       line-height: 1.05;
       gap: 4px;
-      align-items: center;
+      bottom:300px;
       margin: 0 0 40px 0 !important;
     }
 
@@ -284,7 +284,7 @@ body, html {
     }
 
     .socmed24{
-      background:#000000;
+      background:#73478D;
       background-position: center;
       background-attachment: fixed;
       background-size: cover;
@@ -325,7 +325,6 @@ body, html {
      
     }
 
-    
 
    .project-photo img {
     width: 100%;
@@ -340,10 +339,59 @@ body, html {
 }
 
 
+ .gallery-container2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-photo2{
+     width: 300px;
+     height: auto;
+     
+     border-radius: 10px;
+     overflow: hidden;
+     margin: 5px;
+     
+     box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+     
+     
+    }
+
+   .project-photo2 img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .row2 {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
 
 
 
+.Projects{
+   background:#000000;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   padding: 60px 20px;
+   z-index: 20;
+   text-align: center;
+   padding-top: 50px;
+   font-family: 'Kosugi Maru';
+   margin-top: 70px; 
+}
 
+.Projects h1{
+  font-size:64px;
+  color:#F8F8FF;
+  margin-bottom: 40px; 
+  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+}
 
 
 
