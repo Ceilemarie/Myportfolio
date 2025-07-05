@@ -12,6 +12,34 @@ body, html {
     position: relative;
 }
 
+/* sample effect */
+
+.text-hover-wrap {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-text {
+  transition: opacity 0.4s ease;
+  position: relative;
+  z-index: 2;
+  color: black;
+}
+
+.hover-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+  pointer-events: none;
+}
+
+/* sample effect */
+
 .aboutc{
     background:#F8F8FF;
     background-position: center;
@@ -291,9 +319,9 @@ body, html {
       padding: 60px 20px;
       z-index: 10;
       text-align: center;
-      padding-top: 50px;
+      padding-top: 60px;
       font-family: 'Kosugi Maru';
-      margin-top: 100px; /* Adjust this value as needed for spacing */
+      margin-top: 20px; 
 
       
     }
@@ -383,7 +411,7 @@ body, html {
    text-align: center;
    padding-top: 50px;
    font-family: 'Kosugi Maru';
-   margin-top: 70px; 
+   margin-top: 12px; 
 }
 
 .Projects h1{
@@ -392,6 +420,34 @@ body, html {
   margin-bottom: 40px; 
   text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
 }
+
+.project-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card{
+  background:#FFFFFF;
+  border-radius:37px;
+  width:320px;
+  height:500px;
+  text-align: center;
+  padding:20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  stroke: #000000;
+}
+
+
+.project-card img {
+  width: 100%;
+  height: 500x;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+
 
 
 
