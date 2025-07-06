@@ -12,34 +12,6 @@ body, html {
     position: relative;
 }
 
-/* sample effect */
-
-.text-hover-wrap {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.hover-text {
-  transition: opacity 0.4s ease;
-  position: relative;
-  z-index: 2;
-  color: black;
-}
-
-.hover-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: none;
-  pointer-events: none;
-}
-
-/* sample effect */
-
 .aboutc{
     background:#F8F8FF;
     background-position: center;
@@ -50,9 +22,9 @@ body, html {
 }
  
   .Title {
-      font-family: 'Karma';
+      font-family: 'Great Vibes', cursive;
       position: relative;
-      font-size: 128px;
+      font-size: 155px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       top: -5px;
@@ -93,7 +65,7 @@ body, html {
 
     .info{
         position:relative;
-        font-size:64px;
+        font-size:44px;
         font-family:'Kosugi Maru';
         text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
         display: flex;
@@ -131,22 +103,18 @@ body, html {
  
    }
 
-    .about{
-      position:relative;
-      font-size:64px;
-      font-family:'Kosugi Maru';
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      bottom: -70px;
-      justify-content: center;
-      text-align: center; 
-    }
-
+    
     .About {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      position: relative;
+      font-size: 44px;
+      font-family: 'Kosugi Maru';
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      text-align: center;
+      margin-bottom: 24px;
     }
 
     .Me{
@@ -201,25 +169,26 @@ body, html {
 
 
      .softwares{
-     position:static;
-     margin-left: -1030px;
-     font-size:36px;
-     font-family:'Kosugi Maru';
+     margin-left: 0;
+     position: relative;
+     font-size: 36px;
+     font-family: 'Kosugi Maru';
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     margin-bottom: 90px;
+     margin-bottom: 24px;
+     text-align: left;
       
   }
    .sub4{
-     font-family: 'Kosugi';
-     position:static;
-     margin-left:85px;
-     margin-bottom: 100px;
+     margin-left: 0;
+     position: relative;
      font-size: 32px;
+     font-family: 'Kosugi';
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
      display: flex;
      flex-direction: column;
-     line-height: 1.05;                      
-     gap: 4px;  
+     line-height: 1.2;
+     gap: 4px;
+     margin-bottom: 24px;
   }
    .sub4 p{
       margin: 0;
@@ -227,25 +196,26 @@ body, html {
     }  
 
     .language{
-      font-family:'Kosugi Maru';
-      font-size:36px;
-      position:static;
-      margin-left:-1030px;
-      bottom:-1920px;
+      margin-left: 0;
+      position: relative;
+      font-size: 36px;
+      font-family: 'Kosugi Maru';
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      margin-bottom: 24px;
+      text-align: left;
     }
 
     .sub5{
-      font-family:'Kosugi';
+      margin-left: 0;
+      position: relative;
       font-size: 32px;
-      position:static;
-      margin-left:85px;
-      bottom: -1990px;
+      font-family: 'Kosugi';
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
-      line-height: 1.05;                      
-      gap: 4px;  
+      line-height: 1.2;
+      gap: 4px;
+      margin-bottom: 24px;
    }
    .sub5 p{
       margin: 0;
