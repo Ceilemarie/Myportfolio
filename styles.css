@@ -4,32 +4,71 @@
 
 body, html {
   overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
 }
 
 .aboutc-content {
     left: 0;
     right: 0;
     position: relative;
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
+.shape-hover-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text {
+  font-size: 128px;
+  font-weight: bold;
+  color: #000;
+  transition: color 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.hover-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+
+
+
 .aboutc{
-    background:#F8F8FF;
+    background:#4D49FC;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 100vh; /* Ensures section is at least full viewport height, but grows with content */
+    min-height: 200vh; /* Ensures section is at least full viewport height, but grows with content */
     position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
  
   .Title {
       font-family: 'Great Vibes', cursive;
       position: relative;
-      font-size: 155px;
+      font-size: 160px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
-      top: -5px;
+      top: 16px;
       justify-content: center;
       text-align: center;
+      background: transparent !important;
+      box-shadow: none !important;
     }
 
     .intro h1 {
@@ -117,6 +156,8 @@ body, html {
       margin-bottom: 24px;
     }
 
+   
+
     .Me{
       display: block;
       margin: 30px auto 0 auto;
@@ -169,7 +210,7 @@ body, html {
 
 
      .softwares{
-     margin-left: 0;
+     margin-left: 100px;
      position: relative;
      font-size: 36px;
      font-family: 'Kosugi Maru';
@@ -179,7 +220,7 @@ body, html {
       
   }
    .sub4{
-     margin-left: 0;
+     margin-left: 100px;
      position: relative;
      font-size: 32px;
      font-family: 'Kosugi';
@@ -196,7 +237,7 @@ body, html {
     }  
 
     .language{
-      margin-left: 0;
+      margin-left: 100px;
       position: relative;
       font-size: 36px;
       font-family: 'Kosugi Maru';
@@ -206,7 +247,7 @@ body, html {
     }
 
     .sub5{
-      margin-left: 0;
+      margin-left: 100px;
       position: relative;
       font-size: 32px;
       font-family: 'Kosugi';
@@ -232,7 +273,7 @@ body, html {
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       font-size:36px;
       right: 160px;
-      margin-bottom: 10px;
+      margin-bottom: 24px;
     }
 
  
@@ -241,7 +282,7 @@ body, html {
       font-size: 32px;
       position: absolute !important;
       right: 100px;
-      bottom: 630px;
+      bottom: 580px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
@@ -260,7 +301,8 @@ body, html {
       font-family: 'Kosugi Maru';
       font-size: 36px;
       right:120px;
-      bottom: 500px;
+      bottom: 450px;
+   
      }
     
     .sub7{
@@ -273,7 +315,7 @@ body, html {
       line-height: 1.05;
       gap: 4px;
       bottom:300px;
-      margin: 0 0 40px 0 !important;
+      margin-bottom: 24px;
     }
 
     .sub7 p{
@@ -291,7 +333,7 @@ body, html {
       text-align: center;
       padding-top: 60px;
       font-family: 'Kosugi Maru';
-      margin-top: 20px; 
+      margin-top: 10px; 
 
       
     }
@@ -399,7 +441,7 @@ body, html {
 }
 
 .project-card{
-  background:#FFFFFF;
+  background:#F4F4F4;
   border-radius:37px;
   width:320px;
   height:500px;
@@ -416,6 +458,16 @@ body, html {
   border-radius: 12px;
   margin-bottom: 16px;
 }
+
+.project-card h2 {
+  font-family: 'Kosugi Maru';
+  font-size: 28px;
+  margin: 10px 0 8px 0;
+}
+
+
+
+
 
 
 
