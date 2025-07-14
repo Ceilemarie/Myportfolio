@@ -18,16 +18,32 @@ body, html {
 
 .shape-hover-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.hover-text {
+.hover-portfolio {
   font-size: 128px;
   font-weight: bold;
   color: #000;
   transition: color 0.3s ease;
   z-index: 2;
   position: relative;
+}
+
+.hover-name {
+  font-family: 'Kosugi Maru';
+  position: relative;
+  font-size: 64px;
+  font-weight: bold;
+  color: #000;
+  z-index: 2;
+  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+  transition: color 0.3s ease;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hover-shape {
@@ -51,7 +67,7 @@ body, html {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 200vh; /* Ensures section is at least full viewport height, but grows with content */
+    min-height: 200vh; 
     position: relative;
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -71,16 +87,10 @@ body, html {
       box-shadow: none !important;
     }
 
-    .intro h1 {
-      font-family: 'Kosugi Maru';
-      position: relative;
-      font-size: 64px;
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      bottom: -30px;
-      justify-content: center;
-      text-align: center;
-    }
+
+    
+   
+
 
     .sub{
       font-family: 'Kosugi';
@@ -315,7 +325,7 @@ body, html {
       line-height: 1.05;
       gap: 4px;
       bottom:300px;
-      margin-bottom: 24px;
+      margin-bottom: -29px;
     }
 
     .sub7 p{
@@ -464,7 +474,6 @@ body, html {
   font-size: 28px;
   margin: 10px 0 8px 0;
 }
-
 
 
 
