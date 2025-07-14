@@ -1,19 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const wrapper = document.querySelector('.shape-hover-wrapper');
-    if (wrapper) {
-      const shape = wrapper.querySelector('.hover-shape');
-      const text = wrapper.querySelector('.hover-text');
+    document.querySelectorAll('.shape-hover-wrapper').forEach(function(wrapper) {
+      const shapes = wrapper.querySelectorAll('.hover-shape');
+      const text = wrapper.querySelector('.hover-portfolio');
+      const hoverName = wrapper.querySelector('.hover-name');
 
       wrapper.addEventListener('mouseenter', () => {
-        if (shape) {
-          gsap.to(shape, {
-            duration: 0.6,
-            opacity: 1,
-            scale: 1.2,
-            rotate: 20,
-            ease: "power3.out"
-          });
-        }
+        shapes.forEach((shape, index) => {
+          if (shape.classList.contains('first-shape')) {
+            gsap.to(shape, {
+              duration: 0.6,
+              opacity: 1,
+              scale: 1.2,
+              rotate: 20,
+              ease: "power3.out"
+            });
+          } else if (shape.classList.contains('second-shape')) {
+            gsap.to(shape, {
+              duration: 0.6,
+              opacity: 0.6,
+              scale: 1.5,
+              rotate: -10,
+              ease: "power3.out"
+            });
+          }
+        });
         if (text) {
           gsap.to(text, {
             duration: 0.5,
@@ -23,10 +33,19 @@ document.addEventListener("DOMContentLoaded", function () {
             color: "transparent"
           });
         }
+        if (hoverName) {
+          gsap.to(hoverName, {
+            duration: 0.5,
+            backgroundImage: "linear-gradient(135deg,rgba(234, 0, 255, 1),rgba(51, 255, 211, 1))",
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text",
+            color: "transparent"
+          });
+        }
       });
 
       wrapper.addEventListener('mouseleave', () => {
-        if (shape) {
+        shapes.forEach(shape => {
           gsap.to(shape, {
             duration: 0.5,
             opacity: 0,
@@ -34,16 +53,22 @@ document.addEventListener("DOMContentLoaded", function () {
             rotate: 0,
             ease: "power2.inOut"
           });
-        }
+        });
+
         if (text) {
           gsap.to(text, {
             duration: 0.5,
             color: "black"
           });
         }
+        if (hoverName) {
+          gsap.to(hoverName, {
+            duration: 0.5,
+            color: "black"
+          });
+        }
       });
-    }
+    });
   });
 
   
-
