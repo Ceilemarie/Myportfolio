@@ -63,7 +63,7 @@ body, html {
 
 
 .aboutc{
-    background:#4D49FC;
+    background:#7371d3;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -473,6 +473,26 @@ body, html {
   font-family: 'Kosugi Maru';
   font-size: 28px;
   margin: 10px 0 8px 0;
+}
+
+
+.otherinfo{
+  background:#890a7e;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 20px;
+  z-index: 30;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Kosugi Maru';
+  margin-top: 8px; 
+}
+.otherinfo h1{
+  font-size:64px;
+  color:#F8F8FF;
+  margin-bottom: 50px; 
+  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
 }
 
 
