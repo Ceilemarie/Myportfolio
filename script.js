@@ -3,27 +3,28 @@ document.addEventListener("DOMContentLoaded", function () {
       const shapes = wrapper.querySelectorAll('.hover-shape');
       const text = wrapper.querySelector('.hover-portfolio');
       const hoverName = wrapper.querySelector('.hover-name');
-
+      
       wrapper.addEventListener('mouseenter', () => {
-        shapes.forEach((shape, index) => {
-          if (shape.classList.contains('first-shape')) {
-            gsap.to(shape, {
-              duration: 0.6,
-              opacity: 1,
-              scale: 1.2,
-              rotate: 20,
-              ease: "power3.out"
-            });
-          } else if (shape.classList.contains('second-shape')) {
-            gsap.to(shape, {
-              duration: 0.6,
-              opacity: 0.6,
-              scale: 1.5,
-              rotate: -10,
-              ease: "power3.out"
-            });
-          }
-        });
+        shapes.forEach((shape) => {
+  if (shape.classList.contains('first-shape')) {
+    gsap.to(shape, {
+      duration: 0.6,
+      opacity: 1,
+      scale: 1.2,
+      rotate: 20,
+      ease: "power3.out"
+    });
+  } else if (shape.classList.contains('second-shape')) {
+    gsap.to(shape, {
+      duration: 0.6,
+      opacity: 0.6,
+      scale: 1.5,
+      rotate: -10,
+      ease: "power3.out"
+    });
+  }
+});
+
         if (text) {
           gsap.to(text, {
             duration: 0.5,
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
       });
+
 
       wrapper.addEventListener('mouseleave', () => {
         shapes.forEach(shape => {
